@@ -1,0 +1,69 @@
+ Overview of the Red-Blue Nim Game
+1. Red-Blue Nim Game Overview:
+   - Two game versions:
+     - Standard: Players lose if either pile is empty on their turn.
+     - Misère: Players win if either pile is empty on their turn.
+   - Objective: Implement the game in Python to understand game algorithms and AI decision-making.
+
+ Game Rules
+2. Game Rules:
+   - Standard Version: Players lose if either pile is empty.
+   - Misère Version: Players win if either pile is empty.
+   - Scoring:
+     - Red marble: 2 points.
+     - Blue marble: 3 points.
+
+ Command Line Usage
+3. Command Line:
+   - Usage: Describe how to start the game from the command line.
+   - Parameters:
+     - `<num-red>`: Number of red marbles.
+     - `<num-blue>`: Number of blue marbles.
+     - `<version>`: 'standard' or 'misere'.
+     - `<first-player>`: 'computer' or 'human'.
+     - `<depth>`: AI search depth (optional).
+
+ Game Flow
+4. Game Flow:
+   - Turn Order: Alternates between human and computer.
+   - Human Move: Prompt for human move and validate input.
+   - Computer Move: Use MinMax algorithm with Alpha Beta Pruning for AI move.
+
+ MinMax Algorithm
+5. MinMax Algorithm:
+   - Overview: Optimizes decision-making in the game.
+   - Alpha Beta Pruning: Improves efficiency of MinMax.
+   - Move Ordering:
+     - Standard Version: 
+       - Pick 2 red marbles.
+       - Pick 2 blue marbles.
+       - Pick 1 red marble.
+       - Pick 1 blue marble.
+     - Misère Version: 
+       - Pick 1 blue marble.
+       - Pick 1 red marble.
+       - Pick 2 blue marbles.
+       - Pick 2 red marbles.
+
+ Depth-Limited Search (Extra Credit)
+6. Depth-Limited Search:
+   - Purpose: Faster decision-making.
+   - Evaluation Function: Heuristic to evaluate non-terminal game states.
+   - Extra Credit Details: Describe evaluation function reasoning.
+
+ End of Game
+7. End of Game:
+   - Game Over Conditions: Game ends when either pile is empty.
+   - Scoring Calculation: Based on remaining marbles.
+
+ Implementation Details
+8. Implementation Details:
+   - Modules:
+     - Command-line parsing
+     - Game mechanics
+     - Human and computer moves
+     - AI decision-making with MinMax and Alpha Beta Pruning
+
+ Demonstration
+9. Demonstration:
+   - Walkthrough: Provide a sample game showcasing human and computer interactions.
